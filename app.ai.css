@@ -1,0 +1,23 @@
+.cursor-grab .prose,
+.cursor-grab .prose-neutral,
+.cursor-grab .prose-sm,
+.cursor-grab *[node],
+.cursor-grab p[class|="text-neutral" i] {
+	cursor: auto !important;
+	user-select: auto !important;
+	pointer-events: auto !important;
+}
+
+
+
+
+.overlay {
+	outline-width: 2px; outline-style: solid;
+	position:absolute;
+	visibility: hidden;
+	outline-offset:-3px; background-color:rgba(0,0,0,0);
+	&.visibleOverlay {visibility: visible; pointer-events:auto;}
+}
+.outline {
+	outline-width: 2px; outline-style: solid;
+}
