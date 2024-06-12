@@ -1,8 +1,14 @@
+/*
+https://raw.githubusercontent.com/9xbryan/JSLib_backupScripts_CustomStyleScript/main/app.ai.css
+https://api.github.com/repos/9xbryan/JSLib_backupScripts_CustomStyleScript/contents/app.ai.css
+*/
+
 .cursor-grab .prose,
 .cursor-grab .prose-neutral,
 .cursor-grab .prose-sm,
 .cursor-grab *[node],
-.cursor-grab p[class|="text-neutral" i] {
+.cursor-grab p[class|="text-neutral" i],
+p, span {
 	cursor: auto !important;
 	user-select: auto !important;
 	pointer-events: auto !important;
