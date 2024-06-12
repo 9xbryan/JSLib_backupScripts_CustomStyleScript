@@ -14,7 +14,7 @@ function mouseOverHandler(e) {
 	// trg.classList.add('outline');
 	switch (categorizeElement(trg)) {
 		case 'IMG': trg.classList.add('outline'); break;
-		case 'noGrabText': trg.background.color = 'red';
+		case 'noGrabText': trg.classList.add('makeSelectable');
 	}
 
 
@@ -25,7 +25,7 @@ function mouseOutHandler(e) {
 	const trg = e.target;
 	switch (categorizeElement(trg)) {
 		case 'IMG': trg.classList.remove('outline'); break;
-		case 'noGrabText': trg.background.color = 'revert';
+		case 'noGrabText': trg.classList.add('makeSelectable') ;
 	}
 	// trg.classList.remove('outline');
 }
